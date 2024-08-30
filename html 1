@@ -1,0 +1,27 @@
+<!-- ESTE É UM BLOCO DE COMENTÁRIO DENTRO DE UM CONTEÚDO HTML -->
+
+<!-- Essa tag DOCTYPE define a versão do HTML que iremos trabalhar. É extremamente importnate a sua existência. 
+     Ela não precisa ser em CAIXA ALTA, mas normalmente é.
+     Mais detalhes em: https://www.w3.org/wiki/Doctypes_and_markup_styles -->
+<!DOCTYPE html>
+
+<!-- OBS: Mais detalhes sobre identação e comentários podem ser obtidos em: https://studio.code.org/docs/concepts/html/formatting-html/ -->
+
+<!-- A principal - E NECESSÁRIA - tag do HTML é a própria HTML -->
+<html lanb="en">
+    <!-- No Head são definidas as tags de cabeçalho do documento. Mais detalhes em: https://www.w3schools.com/html/html_head.asp 
+         Tudo dentro dessa tag é invisível ao usuário, exceto a tag TITLE, que irá aparecer no título da janela do navegador       
+    -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento HTML BASE</title>
+    </head>
+
+    <!-- A TAG Body também pode ser considerada obrigatória, pois aqui serão dispostos os elementos da página - LITERALMENTE SUA ESTRUTURA
+         Mais informações: https://www.w3schools.com/tags/tag_body.asp
+    -->
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Formatação de Textos</title>
+    </head>
+    <body>
+        <!-- As tags H vão do H1 até o H6 cuja função é hierarquia de títulos para o documento 
+             Mais informações em: https://www.w3schools.com/tags/tag_hn.asp-->
+        <h1>Título com H1</h1>
+        <h2>Título com H2</h2>
+        <h3>Título com H3</h3>
+        <h4>Título com H4</h4>
+        <h5>Título com H4</h5>
+        <h6>Título com H4</h6>
+
+        <!-- A tag P é usado para determinar parágrafos. Mais informações: https://www.w3schools.com/tags/tag_p.asp -->
+        <p>Este é um parágrafo</p>
+
+        <!-- A tag BR é usada para quebrar linha (line BReak). Normalmente ela é usada em conjunto com <P> mas pode ser utilizada no conteúdo de qualquer outra tag 
+             Mais informações: https://www.w3schools.com/tags/tag_br.asp -->
+        <p>Este é um parágrafo <br> com uma quebra de linha.</p>
+
+        <!-- As tags <b></b> e <i></i> são utilizadas para determinar texto em negrito e itálico respectivamente-->
+        <p>Este é um parágrafo <br> com uma quebra de linha <b>com um texto em negrito e outro em <i>itálico</i></b>.</p>
+
+        <!-- A tag Strong usada para exibir conteúdos importantes, normalmente já vem em negrito também. Ela permite o uso com atributos globais do HTML.
+            Mais informações: https://www.w3schools.com/tags/tag_strong.asp -->
+        <p>Este é um parágrafo <br> com uma quebra de linha <b>e um texto em negrito utilizando a tag <strong>STRONG</strong></b>.</p>
+        
+        <!-- A tag FONT é utilizada para formatar fontes no texto. Possui diversos atributos incluindo uma lista de fontes alternativas que podem ser definidas no texto
+             Mais informações: https://www.w3schools.com/tags/tag_font.asp
+            OBS: NÃO É SUPORTADA NO HTML 5, ao invés disso utiliza-se o atributo STYLE que é do CSS -->
+        <p style="font-family:verdana">Este é um parágrafo na fonte VERDANA <br> com uma quebra de linha <b>e um texto em negrito utilizando a tag <strong>STRONG</strong></b>.</p>
+
+        <!-- Outras tags importantes para formatação de textos são: 
+             <big></big> Tamanho da Letra Maior
+             <small></small> Tamanho da Letra menor
+             <sub></sub> Subscrito
+             <sup></sup> Sobrescrito
+             <pre></pre> Texto pré-formatado
+             <blockquote></blockquote Recuo Textual
+             <ins></ins> Texto inserido
+             <del></del> Texto Removido        
+        -->
+    </body>
+</html>

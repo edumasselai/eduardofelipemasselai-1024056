@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Caracteres Especiais</title>
+    </head>
+    <body>
+        <!-- As entidades do HTML - HTML ENTITIES - merecem atenção e em alguns casos devem ser tratados de maneira especial.
+             Todos os caracteres são reservados em HTML.
+             O uso dos caracteres < (Menor) e > (Maior) dentro de texto se não tratado será MIXADO a própria estrutura do HTML.
+
+             Mais informações em: https://www.w3schools.com/html/html_entities.asp-->
+        <p><b>Portanto, para os caracteres menor e maior, utiliza-se a seguinte notação</b>
+            <br> Menor: &lt; ou &#60
+            <br> Maior: &gt; ou &#62 
+        </p>
+
+        <!-- Outros caracteres especiais (também chamados de SYMBOL ENTITIES) em HTML devem ser tratados também com cautela 
+             Mais informações em: https://www.w3schools.com/html/html_symbols.asp -->
+        <p><b>São exemplos de símbolos que devem ser tratados de maneira especial:</b>
+           <br> Arroba: &#64;
+           <br> Mais (adição): &#43;
+           <br> Copyrigth: &#175; ou &reg;
+           <br> Igual: &#61;
+           <br> Maior: &#62; ou &gt;
+           <br> Espaço: &nbsp;
+           <br> Ce Cedilha: &ccedil;
+           <br> A com acento agudo: &atilde;            
+        </p>
+
+        <!-- É possível também fazer a montagem do elemento textual.
+             Mais informações: https://www.w3schools.com/html/html_entities.asp#:~:text=Combining%20Diacritical%20Marks -->
+        <p><b>Esse é um texto com uma composição da elementos para formar um caractere, utilizando a notação especial</b>
+            <br> a (minúsculo) com crase: a&#768;
+            <br> a (minúsculo) com acento agudo: a&#771;
+            <br> O (MAIÚSCULO) com acento agudo: O&#771;
+        </p>
+    </body>
+</html>
