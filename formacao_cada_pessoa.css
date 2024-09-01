@@ -1,0 +1,67 @@
+/* Embora não seja necessária, pode ser quando a folha de stilos contiver algum caractere não ASCII */
+@charset "UTF-8";
+
+
+/* 
+  Conjunto de estilos utilizados para o cadastro de pessoa
+  Lembre-se: Quanto mais específico a regra do seletor, ele será aplicado por último.
+*/
+
+/* Um elemento de URL pode ser referenciado desta forma */
+fieldset {
+  background-image: url("https://s3-sa-east-1.amazonaws.com/site50anos/selo50anos_uni.png");
+  /* Com o valor de atributo HSL (CSS3) é possível aplicar transparência. Nesse caso está 75% transparente */
+  background: hsla(142, 4%, 58%, 0.872);
+}
+
+/* Aplicar regra a todos elementos DIV ou LI */
+div, li {
+  font-family: verdana;
+  font-size: 14px; /* As unidades de medidas podem ser explicitadas ou proporcionais */
+}
+
+div.rodape {
+  text-align: center;
+}
+
+/* Aplicar regra a todos os elementos DIV 
+   As cores podem ser especificadas no formato de nome, RGB ou Hexadecimal (#121212)*/
+div {
+  background-color: rgb(139, 141, 146);
+}
+
+/* Aplicar regra ao elemento DIV que contenha o ID dados_basicos */
+div#dados_basicos {
+  background-color: cornflowerblue;
+}
+
+/* Qualquer elemento com o ID dados_complementares */
+#dados_complementares {
+  background-color: rgb(206, 226, 171);
+}
+
+/* Qualquer elemento com a CLASSE dados_endereco */
+.dados_endereco {
+  background-color: rgb(154, 173, 244);
+}
+
+/* Aplicar regra a todos elementos LI */
+li {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aplicar regra a todos elementos LI que contenham a classe dados_sensiveis */
+li.dados_sensiveis {
+  font-style: italic;
+}
+
+/* A regra @media permite definir comportamentos especificos para outros tipos de mídia
+   Nesse caso pode-se definir declarações específicas para impressão por exemplo */
+@media print {
+
+    div, li {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
