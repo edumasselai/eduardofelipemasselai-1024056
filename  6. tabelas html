@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Tabelas</title>
+    </head>
+    <body>
+        <!-- As tabelas são muito utilizadas em páginas HTML (embora em alguns casos não seja uma boa prática o seu uso: https://tableless.com.br/o-que-etableless/).
+             Basicamente dentro de um elemento “table” podemos ter vários elementos “tr” ou “th” que por sua vez podem ter vários elementos “td”.
+             
+             OBS: Especialmente para tabelas, o uso de IDENTAÇÃO no documento HTML é essencial para manutenção.
+             Mais informações em: https://www.w3schools.com/html/html_tables.asp -->
+        <p>Este é um exemplo de uma tabela com HTML.
+          <table border=”1”>
+             <tr>  
+               <th>Coluna 1</th>
+               <th>Coluna 2</th>
+             </tr>
+             <tr>
+               <td>L1, C1</td>
+               <td>L1, C2</td>
+             </tr>
+             <tr>
+               <td>L2, C1</td>
+               <td>L2, C2</td>
+             </tr>
+          </table>
+        </p>
+
+        <!-- Algumas das propriedades da tag <table>
+               align - define o alinhamento horizontal da tabela. Valores: left, center e right
+               bgcolor - define a cor de fundo da tabela
+               border - define a espessura da borda de uma tabela
+               background - define uma imagem como a plano de fundo da tabela
+               height - define o tamanho vertical da tabela em pixel ou porcentagem em relação a janela
+               width - define o tamanho horizontal em pixel ou porcentagem
+               cellpadding - enchimento das células
+               cellspacing - espaçamento entre células
+        -->
+        <p>Este é um exemplo de uma tabela com formatação especial de 100% do tamanho da página
+          <table border="1" width="100%">
+            <tr>
+              <td>L1, C1</td>
+              <td>L1, C2</td>
+            </tr>
+            <tr>
+              <td>L2, C1</td>
+              <td>L2, C2</td>
+            </tr>
+          </table>
+        </p>
+
+        <!-- A tag TR (Table ROW) permite alguns ajustes e tratamentos imporrantes, como:
+               align - define o alinhamento do conteúdo da linha. valores: left, center, right e justify.
+               bgcolor - define a cor de fundo da linha
+               valign - define o alinhamento vertical das células da linha. valore: top, middle, bottom e baseline; o default é middle.
+        -->
+        <p>Este é um exemplo de uma tabela com formatação especial na LINHA
+          <table border="1" width="100%">
+            <tr align="center" bgcolor="red">
+              <td>L1, C1</td>
+              <td>L1, C2</td>
+            </tr>
+            <tr>
+              <td>L2, C1</td>
+              <td>L2, C2</td>
+            </tr>
+          </table>
+        </p>
+
+
+        <!-- A tag TD (Table DATA) também permite ajustes e tratamentos imporrantes, como:
+               align - responsável pelo alinhamento do conteúdo da célula: left, right, center e justify;
+               bordercolor - define a cor da borda da célula
+               background - define a imagem de fundo da célula
+               bgcolor - define a cor de fundo da célula
+               colspan - define o número de colunas que uma célula ocupará
+               rowspan - define o número de linhas que uma célula ocupará
+        -->
+        <p>Este é um exemplo de uma tabela com formatação especial na LINHA
+          <table border="1" width="100%">
+            <tr align="center" bgcolor="red">
+              <td colspan="2">L1, C1</td>
+              <td>L1, C2</td>
+            </tr>
+            <tr>
+              <td rowspan="2">L2, C1</td>
+              <td>L2, C2</td>
+            </tr>
+          </table>
+        </p>
+
+
+        <!-- Formalmente as tabelas tem a seguinte representação:
+               thead: https://www.w3schools.com/tags/tag_thead.asp
+               tbody: https://www.w3schools.com/tags/tag_tbody.asp
+               tfoot: https://www.w3schools.com/tags/tag_tfoot.asp
+        -->
+        <p>Exemplo de representação formal de uma tabela
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Título Coluna 1</th>
+                <th>Título Coluna 2</th>
+                <th>Título Coluna 3</th>
+               </tr>
+            </thread>
+            <tbody>
+               <tr>
+                <td>Valor Célula (1,1)</td>         
+                <td>Valor Célula (1,2)</td>         
+                <td>Valor Célula (1,3)</td>         
+               </tr>   
+            </tbody>
+            <tfoot>
+               <tr>
+                <td>Valor Rodapé (1,1)</td>         
+                <td>Valor Rodapé (1,2)</td>         
+                <td>Valor Rodapé (1,3)</td>         
+               </tr>   
+            </tfoot>
+          </table>
+        </p>        
+     </body>
+</html>

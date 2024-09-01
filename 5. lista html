@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Listas</title>
+    </head>
+    <body>
+        <!-- Listas Ordenadas: Uma lista ordenada começa com a tag <ol> (ordered list), e cada elemento “ol” pode ter como conteúdo 
+             elementos “li” (list item) formando uma lista. As listas permitem algumas personalizações como indicar qual o valor de
+             inicio (atributo start) e também estilos.
+             Mais informações em: https://www.w3schools.com/tags/tag_ol.asp -->
+        <p><b>Esta é uma <i>lista ordenada</i></b>
+            <ol start="10" style="list-style-type:lower-alpha">
+                 <li>Primeiro item</li>
+                 <li>Segundo Item</li>
+                 <li>Terceiro Item</li>
+                 <li>Quarto item</li>   
+            </ol>
+        </p>
+
+
+        <!-- Listas Não Ordenadas: Uma lista ordenada começa com a tag <ul> (unordered list), e cada elemento “ul” pode ter como conteúdo
+             elementos “li” (list item) formando uma lista. Mais informações em: https://www.w3schools.com/tags/tag_ul.asp -->
+        <p><b>Esta é uma lista <i>não ordenada</i></b>
+            <ul>
+                <li>Primeiro item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+                <li>Quarto item</li>   
+           </ul>
+        </p>
+
+        <!-- Listas de Definição: Uma lista de definição não é uma lista de itens mas sim uma definição de termos. Assim teremos os elementos de 
+             lista de definição “dl” (definition list), seus termos “dt” (definition­list term) e definições da lista de definição
+             Mais informações em: https://www.w3schools.com/tags/tag_dt.asp -->
+        <p><b>Esta é uma lista <i>de definição</i> ela não é uma lista propriamente dita, mas uma definição de termos.</b>
+            <dl>
+                <dt>Primeiro item</dt>
+                    <dd>Segundo nível do primeiro item</dd>
+                <dt>Segundo Item</dt>
+                <dt>Terceiro Item</dt>
+                <dt>Quarto item</dt>   
+            </dl>
+        </p>
+    </body>
+</html>
