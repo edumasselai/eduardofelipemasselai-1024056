@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Formulários</title>
+    </head>
+    <body>
+        <!-- Formulários são utilizados no HTML para fazer o envio de dados para o servidor 
+              Mais informações em: https://www.w3schools.com/html/html_forms.asp
+    
+              Os formulários também incluem elementos de tratamento como a define como o formulário deverá ser aberto:
+                _blank: em uma página em branco
+                _parent: será apresentado na página ou frame principal
+                _self: força a abertura na janela em que o form foi ativado
+                _top: independentemente de qualquer frame, o resultado é aberto sobre toda a página.
+              Mais informações em: https://www.w3schools.com/tags/att_form_target.asp
+        -->
+        <p>Este é um exemplo simples de um formulário na página.</p>
+        <form action="/trata_form.php" target="_blank">
+        </form>
+      
+      
+        <!-- Para fazer sentido, precisamos adicionar elementos de entrada de dados nos formulários, sendo possível:
+              Campos texto/senha
+              Campos memo (Área de Texto)
+              Menu de seleção flutuante
+              Campos para uma check list
+              Campos de seleção única
+              Botão de ação
+              Campo para seleção de arquivo
+
+             Adicionalmente os elementos FIELDSET, UL e LI foram utilizado para agrupar os campos e organizá-los
+             Isso permitirá posteriormente criar uma estrutura de estilos mais rica e detalhada
+          
+             Para envio de dados existem basicamente dois métodos:
+              POST – por meio do encapsulamento das informações na requisição HTTP separadas da URL
+              GET – envia as informações no final da URL especificada na action do formulário
+
+              Mais informações em: https://www.w3schools.com/html/html_forms.asp -->
+        <p>Este é um exemplo de um formulário que será encaminhado para o servidor ao clicar em Enviar.</p>
+        <form action="/trata_form_pessoa.php" method="get">
+          <fieldset class="dados_pessoa">
+            <ul>
+              <li>
+                <label for="campo_nome">Nome:</label>
+                <input type="text" id="campo_nome" name="campo_nome" value="Nome"><br>
+              </li>
+              <li>
+                <label for="campo_name">Sobrenome:</label>
+                <input type="text" id="campo_sobrenome" name="campo_sobrenome" value="Sobrenome"><br><br>
+              </li>
+            </ul>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Alerta" onclick="alert('Nenhuma ação relacionada!')">
+          </fieldset>
+        </form>        
+      </body>
+</html>

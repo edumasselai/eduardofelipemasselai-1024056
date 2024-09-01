@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lanb="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Input e Label</title>
+    </head>
+    <body>
+        <!-- A tag INPUT permite uma enorme variação de usos e como o nome diz, permite a entrada de dados realizada pelo usuário.
+              <input type="button">
+              <input type="checkbox">
+              <input type="color">
+              <input type="date">
+              <input type="datetime-local">
+              <input type="email">
+              <input type="file">
+              <input type="hidden">
+              <input type="image">
+              <input type="month">
+              <input type="number">
+              <input type="password">
+              <input type="radio">
+              <input type="range">
+              <input type="reset">
+              <input type="search">
+              <input type="submit">
+              <input type="tel">
+              <input type="text">
+              <input type="time">
+              <input type="url">
+              <input type="week">
+
+             Normalmente são utiliados em conjunto com formulários
+
+              Mais informações em: https://www.w3schools.com/tags/tag_input.asp e https://www.w3schools.com/html/html_form_input_types.asp
+        -->
+        <p>Este é um exemplo simples de um formulário com INPUTS.</p>
+        <form action="/trata_form.php" target="_blank">
+          <!-- Text -->
+          <input id="campo_text" type="text" name="campo_text" size="100" title="Campo do tipo text" value="1"/>
+          <!-- Password -->
+          <input id="campo_password" type="password" name="campo_password" size="20" maxlength="20" title="Campo do tipo Password" required/>
+          <!-- Checkbox -->
+          <input id="campo_checkbox" type="checkbox" name="campo_checkbox" size="" title="Campo do tipo Check-box" value="1" checked/>
+          <!-- Radio -->
+          <input id="campo_radio" type="radio" name="campo_radio" size="" title="Campo do tipo Radio" value="1" enabled/>
+
+          <!-- Submit -->          
+          <input type="submit" value="Enviar">
+          <!-- Reset -->
+          <input type="reset" value="Limpar">
+        </form>
+
+        <!-- Embora seja possível o uso da tag P para exibição da ETIQUETA do campo (LABEL) não é recomendado. Neste caso utiliza-se a tag 
+             LABEL que é própria para esta finalidade
+
+             Mais informações: https://www.w3schools.com/tags/tag_label.asp
+        -->
+        <p>Este é um exemplo simples de inputs com LABELS.</p>
+        <form action="/trata_form.php" target="_blank">
+          <!-- Text -->
+          <fielset>
+            <label for="campo_text">Campo Text:</label>
+            <input id="campo_text" type="text" name="campo_text" size="100" title="Campo do tipo text" value="1"/><br>
+          
+            <!-- Passord-->
+            <label for="campo_password">Senha:</label>
+            <input id="campo_password" type="password" name="campo_password" size="20" maxlength="20" title="Campo do tipo Password" required/><br>
+            
+            <!-- Checkbox -->
+            <label for="campo_checkbox">Campo Check:</label>
+            <input id="campo_checkbox" type="checkbox" name="campo_checkbox" size="" title="Campo do tipo Check-box" value="1" checked/><br>
+            
+            <!-- Radio -->
+            <label for="campo_radio">Campo Radio:</label>
+            <input id="campo_radio" type="radio" name="campo_radio" size="" title="Campo do tipo Radio" value="1" enabled/><br>
+
+            <!-- Vamos estruturar agora essa parte do exemplo em uma lista. Isso nos permitirá estilizar de modo mais apropriado posteriormente -->
+            <ul>
+              <!-- Exemplo de Uso de Checkbox -->
+              <li>
+                <label for="termos">Aceito os termos e condições de uso</label>
+                <input id="termos" type="checkbox" name="termos_de_uso" size="20" maxlength="20" value="1"/>
+              </li>
+
+              <!-- Exemplo de Uso de Radio com duas opções e uma única escolha -->
+              <li>
+                <label for="sexo">Sexo</label>
+                <input id="sexo_masculino" type="radio" name="sexo" value="1"/>
+                <label for="sexo_masculino">Masculino:</label>
+                <input id="sexo_feminino" type="radio" name="sexo" value="2"/>
+                <label for="sexo_feminino">Feminino:</label>
+              </li>
+            </ul>
+            <br>
+            <!-- Submit -->          
+            <input type="submit" value="Enviar">
+            <!-- Reset -->
+            <input type="reset" value="Limpar">
+          </fielset> 
+        </form>
+    </body>
+</html>
