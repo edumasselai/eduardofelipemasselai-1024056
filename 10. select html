@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Campo SELECT</title>
+    </head>
+    <body>
+        <!-- A tag SELECT permite dispor elementos em uma lista suspensa para seleção. Para definir um campo de lista precisamos usar 
+             uma tag <select> e um conjunto de tags <option>. 
+             Principais atributos da tag SELECT
+              disabled: Desabilita a list
+              multiple: Permite a seleção múltipla de opções
+              name: Nome da lista (importante)
+              size: Define o número de itens visíveis da lista
+
+             Principais atributos da tag OPTION
+              disabled: Desabilita a opção
+              selected: Traz por padrão selecionada a opção
+              value: Valor da opção a ser enviada para o servidor (por meio de um form)
+
+             Mais informações em: https://www.w3schools.com/tags/tag_select.asp
+        -->
+        <p>Este é um exemplo simples de um campo select.</p>
+        <select name="estado" size="10">
+          <option value="">Selecione...</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="PR">Paraná</option>
+          <option value="RS">Rio Grande do Sul</option>
+        </select>
+
+        <!-- Algumas formatações adicionais podem ser aplicadas também -->
+        <p>Este é um exemplo de uma lista suspensa com agrupamento de itens.</p>
+        <select name="carros" id="carros">
+          <optgroup label="Popular">
+            <option value="up">Vw UP</option>
+            <option value="quid">Renaul Quid</option>
+          </optgroup>
+          <optgroup label="SUV">
+            <option value="tracker">GM Tracker</option>
+            <option value="hrv">Honda HRV</option>
+          </optgroup>
+        </select>
+      </body>
+
+</html>
