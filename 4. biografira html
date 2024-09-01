@@ -12,12 +12,12 @@
 
         <!-- Subtítulo -->
         <h2>Introdução</h2>
-        <p>Meu nome é <strong>[ALUNO]</strong> e sou estudante de Sistemas de Informação, disciplina de Desenvolvimento Web. Tenho <big>grande</big> interesse em tecnologia e programação.</p>
+        <p>Meu nome é <strong>Eduardo Felipe Masselai</strong> e sou estudante de Sistemas de Informação, disciplina de Desenvolvimento Web. Tenho <big>grande</big> interesse em tecnologia e programação.</p>
 
         <!-- Seção de Informações Pessoais -->
         <h3>Informações Pessoais</h3>
         <ul>
-            <li>Idade: 20 anos</li>
+            <li>Idade: 30 anos</li>
             <li>Curso: Sistemas de Informação</li>
             <li>Interesses: Programação, música, leitura</li>
         </ul>
@@ -46,11 +46,11 @@
 
         <!-- Seção de Links -->
         <h2>Links Úteis</h2>
-        <p>Visite meu perfil no <a href="#github">GitHub</a> para ver meus projetos.</p>
+        <p>Visite meu perfil no <a href="https://github.com/edumasselai/eduardofelipemasselai-1024056.git">GitHub</a> para ver meus projetos.</p>
 
         <!-- Link âncora -->
         <a name="github"></a>
-        <p>Meu perfil no GitHub: <a href="https://github.com/aluno" target="_blank">github.com/aluno</a></p>
+        <p>Meu perfil no GitHub: <a href="https://github.com/edumasselai/eduardofelipemasselai-1024056.git" target="_blank">github.com/aluno</a></p>
 
         <!-- Áudio -->
         <h2>Minha Música Favorita</h2>
