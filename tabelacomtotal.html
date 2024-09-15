@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Médias</title>
+    <link rel="stylesheet" href="tabelacomtotal.css"> <!-- Link para o arquivo CSS -->
+    <script>
+        function adicionarLinhaTotalizadora() {
+            const tabela = document.getElementById('tabela-notas');
+            const numColunas = tabela.rows[0].cells.length;
+
+            // Cria uma nova linha para o total
+            const novaLinha = tabela.insertRow(tabela.rows.length);
+
+            // Adiciona uma classe para estilizar a linha
+            novaLinha.className = "total-row";
+
+            // Calcula a média para cada coluna
+            for (let i = 1; i < numColunas; i++) { // começa em 1 para ignorar os cabeçalhos
+                let soma = 0;
+                let count = 0;
+                for (let j = 1; j < tabela.rows.length - 1; j++) { // ignora a nova linha totalizadora
+                    const valor = parseFloat(tabela.rows[j].cells[i].innerText);
+                    if (!isNaN(valor)) {
+                        soma += valor;
+                        count++;
+                    }
+                }
+                const media = count ? (soma / count).toFixed(2) : 0;
+                novaLinha.insertCell(i).innerText = media;
+            }
+
+            novaLinha.insertCell(0).innerText = "Média";
+        }
+
+        function adicionarColunaTotalizadora() {
+            const tabela = document.getElementById('tabela-notas');
+
+            // Adiciona uma nova coluna no cabeçalho
+            const cabecalho = tabela.rows[0].insertCell(tabela.rows[0].cells.length);
+            cabecalho.innerText = "Média Aluno";
+
+            // Preenche a nova coluna com a média de cada aluno
+            for (let i = 1; i < tabela.rows.length; i++) {
+                const numColunas = tabela.rows[i].cells.length;
+                let soma = 0;
+                let count = 0;
+                for (let j = 1; j < numColunas - 1; j++) { // ignora o cabeçalho e a nova coluna
+                    const valor = parseFloat(tabela.rows[i].cells[j].innerText);
+                    if (!isNaN(valor)) {
+                        soma += valor;
+                        count++;
+                    }
+                }
+                const media = count ? (soma / count).toFixed(2) : 0;
+                tabela.rows[i].insertCell(numColunas).innerText = media;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo de Tabela com Médias</h1>
+    <table id="tabela-notas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aluno 1</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>Aluno 2</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>9.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button onclick="adicionarLinhaTotalizadora()">Adicionar Linha Totalizadora</button>
+    <button onclick="adicionarColunaTotalizadora()">Adicionar Coluna Totalizadora</button>
+</body>
+</html>
