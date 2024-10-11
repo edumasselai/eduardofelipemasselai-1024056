@@ -33,4 +33,5 @@ foreach ($opcoes as $opcao) {
     
     echo "Para $num_parcelas parcelas com juros de $taxa_juros%, o valor da parcela será: R$ " . number_format($valor_parcela, 2, ',', '.') . "<br>";
 }
+
 ?>
