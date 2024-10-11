@@ -21,3 +21,5 @@ $opcoes = [
     ["parcelas" => 24, "taxa_juros" => 2.0],
     ["parcelas" => 36, "taxa_juros" => 2.3],
     ["parcelas" => 48, "taxa_juros" => 2.6],
+    ];
+?>
