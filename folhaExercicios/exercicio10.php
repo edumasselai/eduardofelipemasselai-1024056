@@ -32,6 +32,7 @@ function imprimir_arvore($pastas, $nivel = 0) {
     }
 }
 
+
 // Chama a função para imprimir a árvore de pastas
 imprimir_arvore($pastas);
 ?>
