@@ -16,6 +16,7 @@ function calcular_parcelas($valor_a_vista, $num_parcelas, $taxa_juros) {
     return $valor_parcela;
 }
 
+
 // Opções de parcelamento e taxas de juros
 $opcoes = [
     ["parcelas" => 24, "taxa_juros" => 2.0],
