@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de Juros - Financiamento do Carro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="exercicio07.css">
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de Juros</h1>
         <form method="POST">
             <label for="valorCarro">Valor do Carro (R$):</label>
-            <input type="number" id="valorCarro" name="valorCarro" value="22500.00" readonly>
+            <input type="number" id="valorCarro" name="valorCarro" value="22500.00">
 
             <label for="valorParcela">Valor da Parcela (R$):</label>
-            <input type="number" id="valorParcela" name="valorParcela" required step="0.01">
+            <input type="number" id="valorParcela" name="valorParcela" value="489.65">
 
             <label for="numeroParcelas">Número de Parcelas:</label>
-            <input type="number" id="numeroParcelas" name="numeroParcelas" value="60" readonly>
+            <input type="number" id="numeroParcelas" name="numeroParcelas" value="60">
 
             <button type="submit">Calcular</button>
         </form>
