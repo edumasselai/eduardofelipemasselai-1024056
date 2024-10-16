@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feira do Joãozinho</title>
-    <link rel="exercicio06.css" href="styles.css">
+    <link rel="stylesheet" href="exercicio06.css">
 </head>
 <body>
 
